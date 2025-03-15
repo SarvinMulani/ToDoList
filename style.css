@@ -1,0 +1,118 @@
+* {
+    border: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #fff;
+}
+
+.main-container {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.container {
+    background-color: #333;
+    width: 100%;
+    max-width: 520px;
+    height: 60vh;
+    border:#333;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.container h3 {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 10px 50px 10px 20px;
+    position: relative;
+    top: 10px;
+}
+
+.inputArea {
+    background-color: #fff;
+    height: 45px;
+    width: 95%;
+    position: relative;
+    top: 15px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.inputArea input {
+    width: 70%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: transparent;
+    margin-left: 15px;
+}
+
+.inputArea .inputButton {
+    width: 120px;
+    font-size: 20px;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #1c1919;
+    color: #fff;
+}
+
+.listContainer {
+    position: relative;
+    top: 40px;
+}
+
+.listContainer li {
+    font-size: 18px;
+    list-style: none;
+    margin-bottom: 12px;
+    margin-left: 20px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.listContainer li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(images/unchecked1.png);
+    background-size: cover;
+    background-position: center;
+    left: -40px;
+}
+
+li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+li.checked::before {
+    background-image: url(images/checked1.png);
+}
+
+span {
+    position: absolute;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+
+span:hover {
+    background-color: #1c1919;
+    border-radius: 50%;
+}
