@@ -86,7 +86,7 @@ body {
     position: absolute;
     height: 28px;
     width: 28px;
-    background-image: url(images/unchecked1.png);
+    background-image: url(unchecked1.png);
     background-size: cover;
     background-position: center;
     left: -40px;
@@ -98,7 +98,7 @@ li.checked {
 }
 
 li.checked::before {
-    background-image: url(images/checked1.png);
+    background-image: url(checked1.png);
 }
 
 span {
